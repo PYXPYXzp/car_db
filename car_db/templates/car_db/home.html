@@ -1,0 +1,8 @@
+
+{% block content %}
+  <h2>Homepage</h2>
+  <p>Hello {{ user.username }}!</p>
+    <a href="{% url 'social:begin' 'google-oauth2' %}">Google</a>
+    <a href="{% url 'social:begin' 'google-plus' %}">Google+</a>
+    <a href="{% url 'social:begin' 'google-oauth' %}">Google++</a>
+{% endblock %}
